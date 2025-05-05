@@ -27,7 +27,8 @@ export default function RootLayout({ children }) {
             <Toaster richColors />
             <footer className="bg-black py-6">
               <div className="container mx-auto px-4 text-center text-white">
-                <p>© 2025 OptEx | All Rights Reserved.</p>
+                
+                <p>@Hackwave'2025 | Fin Vista By Ideahunt </p>
               </div>
             </footer>
         </body>

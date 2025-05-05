@@ -28,7 +28,7 @@ const HeroSection = ({ userId }) => {
   }, []);
 
   return (
-    <div className="bg-black min-h-screen flex items-center justify-center px-4 pt-24">
+    <div className="bg-black min-h-screen flex items-center justify-center px-4 pt-24 mb-5">
       {/* Container with white background */}
       <section
         ref={imageRef}
