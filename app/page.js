@@ -18,7 +18,7 @@ export const dynamic = "force-dynamic";
 export default function Home() {
   return (
    
-    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div className="min-h-screen bg-black">
       <HeroSection />
 
       {/* Stats Section */}
@@ -131,6 +131,13 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      <div className="py-20 bg-black">
+  <h2 className="text-center font-bold text-[10px] md:text-[18vw] text-transparent bg-clip-text bg-gradient-to-b from-gray-400 to-gray-900">
+    Impact Creaters
+  </h2>
+</div>
+
+
     </div>
   );
 }
