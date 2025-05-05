@@ -1,5 +1,6 @@
+'use client'
 
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -9,15 +10,40 @@ import {
   testimonialsData,
 } from "@/data/landing";
 import Image from "next/image";
-
-import HeroSection from "@/components/hero";
 import Link from "next/link";
+import HeroSection from "@/components/hero";
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
 
 export const dynamic = "force-dynamic";
 
+// Carousel image array
+const images = [
+  '/img1.jpg',
+  '/img2.jpg',
+  '/img3.jpg',
+  // Add more image paths
+];
+
 export default function Home() {
+  const [sliderRef, instanceRef] = useKeenSlider({
+    loop: true,
+    renderMode: 'performance',
+    drag: false,
+    slides: {
+      perView: 1,
+      spacing: 0,
+    },
+  });
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      instanceRef.current?.next();
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [instanceRef]);
+
   return (
-   
     <div className="min-h-screen bg-black">
       <HeroSection />
 
@@ -36,14 +62,30 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="flex justify-center p-6">
-  
-    </div>
+
+      {/* Auto Carousel Section */}
+      <section className="py-12 bg-green-500">
+        <div className="container mx-auto px-4">
+          <div ref={sliderRef} className="keen-slider rounded-2xl overflow-hidden shadow-lg">
+            {images.map((src, idx) => (
+              <div key={idx} className="keen-slider__slide relative h-[300px] w-full">
+                <Image
+                  src={src}
+                  alt={`Slide ${idx + 1}`}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-2xl"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Features Section */}
       <section id="features" className="py-20">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">
+        <div className="container mx-auto px-4 mt-0">
+          <h2 className="text-3xl text-shadow-white font-bold text-center mb-12">
             All the tools you need to handle your finances
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -131,13 +173,13 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      {/* Final Banner */}
       <div className="py-20 bg-black">
-  <h2 className="text-center font-bold text-[10px] md:text-[18vw] text-transparent bg-clip-text bg-gradient-to-b from-gray-400 to-gray-900">
-    Impact Creaters
-  </h2>
-</div>
-
-
+        <h2 className="text-center font-bold text-[10px] md:text-[18vw] text-transparent bg-clip-text bg-gradient-to-b from-gray-400 to-gray-900">
+          Impact Creaters
+        </h2>
+      </div>
     </div>
   );
 }
