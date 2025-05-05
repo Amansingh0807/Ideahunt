@@ -23,8 +23,8 @@ const Header = async () => {
           <Image
             src={"/logo.png"}
             alt="OptEx Logo"
-            width={250}
-            height={100}
+            width={300}
+            height={200}
             className="h-12 w-auto object-contain"
           />
         </Link>
