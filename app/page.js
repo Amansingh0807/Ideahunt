@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import React, { useEffect } from "react";
 import { Button } from "@/components/ui/button";
@@ -15,7 +15,7 @@ import HeroSection from "@/components/hero";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
-// export const dynamic = "force-dynamic";
+export const dynamic = "force-dynamic"; // Mark the route as dynamic
 
 // Carousel image array
 const images = [
@@ -68,14 +68,14 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div ref={sliderRef} className="keen-slider rounded-2xl overflow-hidden shadow-lg">
             {images.map((src, idx) => (
-             <div key={idx} className="keen-slider__slide relative h-[300px] w-full">
-             <Image
-               src={src}
-               alt={`Slide ${idx + 1}`}
-               fill
-               className="object-cover rounded-2xl"
-             />
-           </div>
+              <div key={idx} className="keen-slider__slide relative h-[300px] w-full">
+                <Image
+                  src={src}
+                  alt={`Slide ${idx + 1}`}
+                  fill
+                  className="object-cover rounded-2xl"
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -85,7 +85,7 @@ export default function Home() {
       <section id="features" className="py-20">
         <div className="container mx-auto px-4 mt-0">
           <h2 className="text-3xl text-white text-shadow-white font-bold text-center mb-12">
-          Built for today, What&apos;s Ready for tomorrow
+            Built for today, What&apos;s Ready for tomorrow
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuresData.map((feature, index) => (
@@ -159,7 +159,7 @@ export default function Home() {
             Ready to Take Control of Your Finances?
           </h2>
           <p className="text-black dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-          Join top teams using Fin CiVista to simplify expenses, payroll, and financial planning with Automation.
+            Join top teams using Fin CiVista to simplify expenses, payroll, and financial planning with Automation.
           </p>
           <Link href="/dashboard">
             <Button
