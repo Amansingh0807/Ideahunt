@@ -1,12 +1,11 @@
-import SavingsForm from "./_components/SavingsForm";
-import SavingsList from "./_components/SavingsList";
+import React from 'react';
+
 
 export default function SavingsPage() {
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">Savings Goals</h1>
-      <SavingsForm />
-      <SavingsList />
+      <h1 className="text-2xl mt-50 text-center font-bold mb-4">This is Under Construction</h1>
+      
     </div>
   );
 }
