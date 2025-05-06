@@ -6,6 +6,7 @@ import {
     Globe,
     Zap,
   } from "lucide-react";
+
   
   // Stats Data
   export const statsData = [
@@ -34,36 +35,36 @@ import {
   // Features Data
   export const featuresData = [
     {
-      icon: <BarChart3 className="h-8 w-8 text-blue-600" />,
-      title: "Enhanced Insights",
+      icon: <BarChart3 className="h-8 w-8 text-green-800" />,
+      title: "End-to-End AI-Powered Payroll Processing",
       description:
         "Gain in-depth understanding of your spending habits with AI-driven analytics",
     },
     {
-      icon: <Receipt className="h-8 w-8 text-blue-600" />,
-      title: "Intelligent Receipt Reader",
+      icon: <Receipt className="h-8 w-8 text-green-800" />,
+      title: "Smart Asset & Investment Management",
       description:
-        "Automatically capture data from receipts with cutting-edge AI technology",
+        "Offers personalized insights and portfolio suggestions for EPF, NPS, SIPs, mutual funds, and insurance, all seamlessly integrated within the platform.",
     },
     {
-      icon: <PieChart className="h-8 w-8 text-blue-600" />,
-      title: "Budget Planning",
-      description: "Create and manage budgets with intelligent recommendations",
+      icon: <PieChart className="h-8 w-8 text-green-800" />,
+      title: " Integrated Wallet with UPI & International Payouts",
+      description: "Built-in wallet system that supports India’s UPI, bank transfers, and crypto-compatible global payouts — tailored for modern, borderless transactions.",
     },
     {
-      icon: <CreditCard className="h-8 w-8 text-blue-600" />,
-      title: "Unified Management for Multiple Accounts",
-      description: "Effortlessly oversee all your accounts and credit cards in one platform",
+      icon: <CreditCard className="h-8 w-8 text-green-800" />,
+      title: "Payroll-as-a-Service API",
+      description: "A plug-and-play payroll infrastructure for startups, platforms, and HRMS providers — making OptEx AI a backend engine for global payroll.",
     },
     {
-      icon: <Globe className="h-8 w-8 text-blue-600" />,
-      title: "Multi-Currency",
-      description: "Support for multiple currencies with real-time conversion",
+      icon: <Globe className="h-8 w-8 text-green-800" />,
+      title: "Employee Benefits Marketplace",
+      description: "Curated marketplace offering discounted access to SaaS tools, credit services, insurances, and financial consultations — exclusive to registered users.",
     },
     {
-      icon: <Zap className="h-8 w-8 text-blue-600" />,
-      title: "Intelligent Data-Driven Insights",
-      description: "Receive smart financial insights and personalized recommendations",
+      icon: <Zap className="h-8 w-8 text-green-800" />,
+      title: " ESOP & Bonus Planning Suite",
+      description: "Visual dashboards and AI-powered tools to plan bonuses, manage ESOPs, and make informed equity decisions — ideal for both startups and MNCs.",
     },
   ];
   

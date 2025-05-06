@@ -4,6 +4,8 @@ import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { CalendarIcon, Loader2 } from "lucide-react";
+import { Bot, DollarSign, LineChart, Target, Wallet, Globe, UserCheck, Briefcase, Gift, ShoppingBag, Code, Server, BarChart3, PieChart } from 'lucide-react';
+
 import { format } from "date-fns";
 import { useRouter, useSearchParams } from "next/navigation";
 import useFetch from "@/hooks/use-fetch";
@@ -309,12 +311,12 @@ export function AddTransactionForm({
         <Button
           type="button"
           variant="outline"
-          className="w-full"
+        
           onClick={() => router.back()}
         >
           Cancel
         </Button>
-        <Button type="submit" className="w-full mb-8" disabled={transactionLoading}>
+        <Button type="submit" className="mb-8" disabled={transactionLoading}>
           {transactionLoading ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
