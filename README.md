@@ -47,7 +47,7 @@ Fin Civista solves these issues with a unified, automated, and intelligent platf
 ## 🧱 Technical Stack
 
 ### 🌐 Frontend
-- `Next.js` with `TypeScript` – SEO-optimized and scalable UI
+- `Next.js` with `JavaScript` – SEO-optimized and scalable UI
 - `Tailwind CSS` – Utility-first responsive styling
 - `ShadCN/UI` + `Framer Motion` – Beautiful and animated components
 
