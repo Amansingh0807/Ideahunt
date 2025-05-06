@@ -51,7 +51,7 @@ const Header = async () => {
   href="/tools"
   className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-2"
 >
-  <Button variant="outline" className="flex items-center gap-2">
+  <Button className="flex items-center gap-2">
   <Wrench />{/* Savings Icon */}
     <span className="hidden md:inline">Tools</span>
   </Button>
@@ -60,7 +60,7 @@ const Header = async () => {
               href="/dashboard"
               className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-2"
             >
-              <Button variant="outline">
+              <Button>
                 <LayoutDashboard size={18} />
                 <span className="hidden md:inline">Dashboard</span>
               </Button>

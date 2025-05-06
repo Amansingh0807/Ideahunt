@@ -84,8 +84,8 @@ export default function Home() {
       {/* Features Section */}
       <section id="features" className="py-20">
         <div className="container mx-auto px-4 mt-0">
-          <h2 className="text-3xl text-shadow-white font-bold text-center mb-12">
-            All the tools you need to handle your finances
+          <h2 className="text-3xl text-white text-shadow-white font-bold text-center mb-12">
+          Built for today, What's Ready for tomorrow
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuresData.map((feature, index) => (
@@ -153,21 +153,20 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-blue-200 dark:bg-blue-800">
+      <section className="py-20 bg-green-400 dark:bg-blue-800">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-black dark:text-white mb-4">
             Ready to Take Control of Your Finances?
           </h2>
           <p className="text-black dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-            Join thousands of users who are already managing their finances
-            smarter with OptEx
+          Join top teams using Fin CiVista to simplify expenses, payroll, and financial planning with Automation.
           </p>
           <Link href="/dashboard">
             <Button
               size="lg"
-              className="bg-white dark:bg-gray-700 text-blue-600 dark:text-white hover:bg-blue-50 dark:hover:bg-gray-600 animate-bounce"
+              className="bg-[#f4f8ef] dark:bg-gray-700 text-black dark:text-white hover:bg-blue-50 dark:hover:bg-gray-600 animate-bounce"
             >
-              Start Free Trial
+              Join Revolution
             </Button>
           </Link>
         </div>
