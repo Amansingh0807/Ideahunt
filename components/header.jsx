@@ -1,7 +1,7 @@
 "use server"
 import React from "react";
 import { Button } from "./ui/button";
-import { PenBox, LayoutDashboard } from "lucide-react";
+import { PenBox, LayoutDashboard, ShieldCheck } from "lucide-react";
 import {  Wrench } from 'lucide-react';
 import Link from "next/link";
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
@@ -56,6 +56,16 @@ const Header = async () => {
     <span className="hidden md:inline">Tools</span>
   </Button>
 </Link>
+<Link
+  href="/claim"
+  className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-2"
+>
+  <Button className="flex items-center gap-2">
+  <ShieldCheck/>{/* Savings Icon */}
+    <span className="hidden md:inline">Claim</span>
+  </Button>
+</Link>
+
             <Link
               href="/dashboard"
               className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-2"
