@@ -1,11 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { Suspense, useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
-import { defaultCategories } from "@/data/categories";
 import { AddTransactionForm } from "../_components/transaction-form";
 import { getUserAccounts } from "@/actions/dashboard";
 import { getTransaction } from "@/actions/transaction";
+import { defaultCategories } from "@/data/categories";
+
+export const dynamic = "force-dynamic"; // Mark the route as dynamic
 
 export default function AddTransactionPage() {
   const searchParams = useSearchParams();
@@ -29,16 +31,18 @@ export default function AddTransactionPage() {
   }, [editId]);
 
   return (
-    <div className="max-w-3xl mt-32 mx-auto px-5">
-      <div className="flex justify-center md:justify-normal mt-32 mb-8">
-        <h1 className="text-5xl gradient-title">Add Transaction</h1>
+    <Suspense fallback={<div>Loading...</div>}>
+      <div className="max-w-3xl mt-32 mx-auto px-5">
+        <div className="flex justify-center md:justify-normal mt-32 mb-8">
+          <h1 className="text-5xl gradient-title">Add Transaction</h1>
+        </div>
+        <AddTransactionForm
+          accounts={accounts}
+          categories={defaultCategories} // Pass categories here
+          editMode={!!editId}
+          initialData={initialData}
+        />
       </div>
-      <AddTransactionForm
-        accounts={accounts}
-        categories={defaultCategories}
-        editMode={!!editId}
-        initialData={initialData}
-      />
-    </div>
+    </Suspense>
   );
 }
