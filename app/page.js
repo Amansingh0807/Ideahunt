@@ -19,9 +19,9 @@ export const dynamic = "force-dynamic";
 
 // Carousel image array
 const images = [
-  '/img1.jpg',
-  '/img2.jpg',
-  '/img3.jpg',
+  '/impact1.png',
+  '/impact2.png',
+  '/impact3.png',
   // Add more image paths
 ];
 
@@ -48,12 +48,12 @@ export default function Home() {
       <HeroSection />
 
       {/* Stats Section */}
-      <section className="py-20 bg-green-50 dark:bg-green-200">
+      <section className="py-20 bg-green-500 dark:bg-green-600">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
             {statsData.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+                <div className="text-4xl font-bold text-black dark:text-blue-400 mb-2">
                   {stat.value}
                 </div>
                 <div className="text-black dark:text-black">{stat.label}</div>
@@ -64,19 +64,18 @@ export default function Home() {
       </section>
 
       {/* Auto Carousel Section */}
-      <section className="py-12 bg-green-500">
+      <section className="py-12 bg-green-100">
         <div className="container mx-auto px-4">
           <div ref={sliderRef} className="keen-slider rounded-2xl overflow-hidden shadow-lg">
             {images.map((src, idx) => (
-              <div key={idx} className="keen-slider__slide relative h-[300px] w-full">
-                <Image
-                  src={src}
-                  alt={`Slide ${idx + 1}`}
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-2xl"
-                />
-              </div>
+             <div key={idx} className="keen-slider__slide relative h-[300px] w-full">
+             <Image
+               src={src}
+               alt={`Slide ${idx + 1}`}
+               fill
+               className="object-cover rounded-2xl"
+             />
+           </div>
             ))}
           </div>
         </div>
@@ -123,8 +122,8 @@ export default function Home() {
       {/* Testimonials Section */}
       <section id="testimonials" className="py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-16">
-            What Our Users Say
+          <h2 className="text-3xl text-white font-bold text-center mb-16">
+            What are the Thoughts of World Leaders
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonialsData.map((testimonial, index) => (

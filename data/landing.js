@@ -10,24 +10,24 @@ import {
   // Stats Data
   export const statsData = [
     {
-      value: "1K+",
-      label: "Active Users",
+      value: "890 M+",
+      label: "Active Gig Workers",
     },
     {
-      value: "$2M+",
-      label: "Transactions Tracked",
+      value: "98 M+",
+      label: "Gig Workers in India",
     },
     {
-      value: "1k+",
-      label: "Happy Customers",
+      value: "26.87 B+",
+      label: "Remote Software Turnaround",
     },
     {
-      value: "99.9%",
-      label: "Uptime",
+      value: "20.78%",
+      label: "CAGR",
     },
     {
-      value: "4.8/5",
-      label: "User Rating",
+      value: "12.87 T+",
+      label: "Gig Economy Around the world",
     },
   ];
   
@@ -92,24 +92,24 @@ import {
   // Testimonials Data
   export const testimonialsData = [
     {
-      name: "telivio henski",
-      role: "Small Business Owner",
-      image: "/image1.jpg",
+      name: "Nicholas Bloom",
+      role: "Contributor to the IMF",
+      image: "/nicholas.jpg",
       quote:
-      "OptEx has revolutionized the way I handle my business finances. The AI-driven insights have uncovered cost-saving opportunities I never realized were possible.",
+      "The 2020 surge in working from home has helped offset the prepandemic productivity slowdown overall and is boosting present and future growth.",
     },
     {
-      name: "Michael Chen",
-      role: "Freelancer",
-      image: "/image2.jpg",
+      name: "Gita Gopinath",
+      role: "Managing Director of the IMF",
+      image: "/gita.jpg",
       quote:
-        "The receipt scanning feature saves me countless hours every month, allowing me to concentrate on my work instead of dealing with manual data entry and expense tracking.",
+        "There is certainly a benefit from working remotely in the sense that your productivity goes up, you just have to commute a lot less.",
     },
     {
-      name: "Himanshi Patel",
-      role: "Financial Advisor",
-      image: "/image3.jpg",
+      name: "Bill gates",
+      role: "co-founder of Microsoft",
+      image: "/bill.jpg",
       quote:
-        "I highly recommend OptEx to all my clients. Its multi-currency support and in-depth analytics make it ideal for international investors.",
+        "The future of work is remote. The future of leadership is empowerment. the global gig economy workforce is estimated to be between 450 million to 525 million people.",
     },
   ];
