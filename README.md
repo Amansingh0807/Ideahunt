@@ -135,16 +135,15 @@ We aim to evolve **Fin Civista** into a **complete financial operating system**:
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/your-org/fin-civista.git
-   cd fin-civista
    ```
 2. **Install Dependencies**
   ```bash
-  npm install
+  npm install / npm install --legacy-peer-deps
   ```
 3. **Run the App**
-```bash
-npm run dev
-```
+  ```bash
+   npm  run dev
+  ```
 ## 🤝How to make Contribution
 
 We welcome contributions from developers of all skill levels! Whether you're fixing a bug, adding new features, or improving documentation, your help is appreciated. 
