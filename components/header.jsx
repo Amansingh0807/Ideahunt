@@ -2,7 +2,7 @@
 import React from "react";
 import { Button } from "./ui/button";
 import { PenBox, LayoutDashboard } from "lucide-react";
-import { PiggyBank  } from 'lucide-react';
+import {  Wrench } from 'lucide-react';
 import Link from "next/link";
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import { checkUser } from "@/lib/checkUser";
@@ -48,19 +48,19 @@ const Header = async () => {
         <div className="flex items-center space-x-4">
           <SignedIn>
           <Link
-  href="/saving"
+  href="/tools"
   className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-2"
 >
-  <Button variant="outline" className="flex items-center gap-2">
-    <PiggyBank /> {/* Savings Icon */}
-    <span className="hidden md:inline">Saving</span>
+  <Button className="flex items-center gap-2">
+  <Wrench />{/* Savings Icon */}
+    <span className="hidden md:inline">Tools</span>
   </Button>
 </Link>
             <Link
               href="/dashboard"
               className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-2"
             >
-              <Button variant="outline">
+              <Button>
                 <LayoutDashboard size={18} />
                 <span className="hidden md:inline">Dashboard</span>
               </Button>

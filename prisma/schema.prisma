@@ -20,6 +20,7 @@ model User {
   savings       Saving[]
   createdAt     DateTime      @default(now())
   updatedAt     DateTime      @updatedAt
+  
 
   @@map("users")
 }
