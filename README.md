@@ -4,6 +4,8 @@
 
 [Click here to view the PPT](https://www.canva.com/design/DAGmqns0F0g/or4Si9SknKn7sul2Vp8zlw/edit?utm_content=DAGmqns0F0g&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
+[Click here to View Video](https://youtu.be/XKTSYis18dk)
+
 ## 🌐 Overview
 
 **Fin Civista** is an intelligent financial automation platform designed to centralize and streamline expense tracking, reimbursements, payroll, tax compliance, and financial planning for remote workers, freelancers, and full-time employees.
