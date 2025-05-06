@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label";
 import { ReceiptScanner } from "./_components/recipt-scanner"; // Adjust the import path as necessary
 import { defaultCategories } from "@/data/categories"; // Import your categories
 
+
 export default function ClaimPage() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [editMode, setEditMode] = useState(false); // Added editMode state

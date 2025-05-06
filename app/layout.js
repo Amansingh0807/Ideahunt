@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
             <footer className="bg-black py-6">
               <div className="container mx-auto px-4 text-center text-white">
                 
-                <p>@Hackwave'2025 | Fin CiVista By Ideahunt </p>
+                <p>@Hackwave 2025 | Fin CiVista By Ideahunt </p>
               </div>
             </footer>
         </body>

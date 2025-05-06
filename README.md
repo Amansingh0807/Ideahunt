@@ -134,7 +134,7 @@ We aim to evolve **Fin Civista** into a **complete financial operating system**:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-org/fin-civista.git
+   git clone https://github.com/your-org/ideahunt.git
    ```
 2. **Install Dependencies**
   ```bash
