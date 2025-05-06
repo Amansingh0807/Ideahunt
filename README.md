@@ -1,5 +1,9 @@
 # 💼 Fin Civista – AI-Powered Financial Operating System for Modern Workforces
 
+## Check Out The ppt : 
+
+[Click here to view the PPT](https://www.canva.com/design/DAGmqns0F0g/or4Si9SknKn7sul2Vp8zlw/edit?utm_content=DAGmqns0F0g&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
 ## 🌐 Overview
 
 **Fin Civista** is an intelligent financial automation platform designed to centralize and streamline expense tracking, reimbursements, payroll, tax compliance, and financial planning for remote workers, freelancers, and full-time employees.
@@ -130,4 +134,39 @@ We aim to evolve **Fin Civista** into a **complete financial operating system**:
    ```bash
    git clone https://github.com/your-org/fin-civista.git
    cd fin-civista
+   ```
+2. **Install Dependencies**
+  ```bash
+  npm install
+  ```
+3. **Run the App**
+```bash
+npm run dev
 ```
+## 🤝How to make Contribution
+
+We welcome contributions from developers of all skill levels! Whether you're fixing a bug, adding new features, or improving documentation, your help is appreciated. 
+
+To contribute:
+
+1. ⭐ Star the repository to show your support.
+2. 📝 Create an issue outlining how you'd like to contribute to the project.
+3. 🍴 Fork the repository to make your own copy:
+   ```sh
+   # Click on the "Fork" button at the top right of the repository page
+4. 💻 Implement your changes in the forked repository by creating a new branch for your feature or fix:
+   ```
+   git checkout -b feature-or-fix-name
+   ```
+5. Make your changes and commit them using Conventional Commits:
+   ```
+   git commit -m "feat: describe your changes"
+   ```
+6. 🔄 Push your branch:
+   ```
+   git push origin feature-or-fix-name
+   ```
+7. Open a pull request and describe the changes you made, mentioning the issue number you're addressing.
+8. ⏳ Wait for review and feedback from the maintainers.
+
+### This Project is build under the Hackwave Hackathon @ 2025

@@ -11,8 +11,8 @@ import { defaultCategories } from "@/data/categories"; // Import your categories
 export default function ClaimPage() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [editMode, setEditMode] = useState(false); // Added editMode state
-  const [scannedData, setScannedData] = useState(null); // State to store scanned data
-  const [selectedCategory, setSelectedCategory] = useState(""); // State for selected category
+  const [scannedData, setScannedData] = useState(null); 
+  const [selectedCategory, setSelectedCategory] = useState(""); 
 
   const handlePayNow = () => {
     // Redirect to the same route
@@ -42,7 +42,7 @@ export default function ClaimPage() {
 
     console.log("Claim Data:", claimData);
 
-    // Add your API call logic here to submit the claim
+   
     alert("Claim submitted successfully!");
     setIsDrawerOpen(false); // Close the drawer
   };
