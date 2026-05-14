@@ -33,11 +33,11 @@
     "form-data": "^4.0.4",
     "keen-slider": "^6.8.6",
     "lucide-react": "^0.487.0",
-    "next": "15.2.4",
+    "next": "16.2.6",
     "prisma": "^6.7.0",
-    "react": "^19.0.0",
+    "react": "19.0.0",
     "react-day-picker": "^8.10.1",
-    "react-dom": "^19.0.0",
+    "react-dom": "19.0.0",
     "react-hook-form": "^7.56.2",
     "react-spinners": "^0.17.0",
     "recharts": "^2.15.3",
@@ -52,7 +52,7 @@
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
-    "eslint-config-next": "15.2.4",
+    "eslint-config-next": "16.2.6",
     "tailwindcss": "^4"
   }
 }

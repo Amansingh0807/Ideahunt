@@ -18,7 +18,7 @@ const clerk = clerkMiddleware(async (auth, req) => {
   return NextResponse.next();
 });
 
-export default clerkMiddleware();
+export default clerk;
 
 export const config = {
   matcher: [
